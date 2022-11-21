@@ -1,0 +1,80 @@
+<div class="form-wrap">
+  <div class="tabs">
+    <h3 class="signup-tab"><a class="active" href="#signup-tab-content">Sign Up</a></h3>
+    <h3 class="login-tab"><a href="#login-tab-content">Login</a></h3>
+  </div><!--.tabs-->
+
+  <div class="tabs-content">
+    <div id="signup-tab-content" class="active">
+      <form class="signup-form" action="/signup" method="post">
+        <input
+          type="email"
+          name="email"
+          class="input"
+          id="user_email"
+          autocomplete="on"
+          placeholder="Email"
+        />
+        <input
+          type="text"
+          class="input"
+          name="username"
+          id="user_name"
+          autocomplete="on"
+          placeholder="Username"
+        />
+        <input
+          type="password"
+          class="input"
+          id="user_pass"
+          name="password"
+          autocomplete="on"
+          placeholder="Password"
+        />
+        <button
+          name="submit"
+          type="submit"
+          class="button"
+          value="Sign Up"
+        >submit</button>
+      </form><!--.login-form-->
+      <div class="help-text">
+        <p>By signing up, you agree to our</p>
+        <p><a href="#">Terms of service</a></p>
+      </div><!--.help-text-->
+    </div><!--.signup-tab-content-->
+
+    <div id="login-tab-content">
+      <form class="login-form" action="/log_in" method="post">
+        <input
+          type="text"
+          class="input"
+          name="Email"
+          id="user_login"
+          autocomplete="off"
+          placeholder="Email or Username"
+        />
+        <input
+          type="password"
+          class="input"
+          name="password"
+          id="user_pass"
+          autocomplete="off"
+          placeholder="Password"
+        />
+        <input
+          type="checkbox"
+          name="remember"
+          class="checkbox"
+          id="remember_me"
+        />
+        <label for="remember_me">Remember me</label>
+
+        <input type="submit" class="button" value="Login" />
+      </form><!--.login-form-->
+      <div class="help-text">
+        <p><a href="#">Forget your password?</a></p>
+      </div><!--.help-text-->
+    </div><!--.login-tab-content-->
+  </div><!--.tabs-content-->
+</div><!--.form-wrap-->
